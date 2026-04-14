@@ -1,0 +1,26 @@
+[project]
+package-mode = false
+name = "rag-research-paper-explainer"
+version = "0.1.0"
+description = "End-to-End RAG Pipeline over ML arXiv Papers"
+authors = [
+    {name = "Diksha Menghmalani",email = "menghmalani.diksha07@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "qdrant-client<=1.8.2",
+    "torch>=2.0.0",
+    "sentence-transformers>=2.2.0",
+    "transformers>=4.30.0",
+    "rank_bm25>=0.2.2",
+    "PyMuPDF>=1.22.0,<1.24.0",
+    "arxiv>=1.4.0,<2.1.0",
+    "numpy<2.0.0",
+    "pandas<2.1.0",
+    "tqdm>=4.65.0",
+    "python-dotenv<1.0.0"
+]
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
